@@ -9,25 +9,26 @@ const Header = ({ siteTitle }) => (
   <Navbar bg="light" expand="lg">
     <Image
       style={{ maxWidth: "200px" }}
-      class={"d-lg-none"}
+      class={"d-lg-none d-xl-none "}
       src="/embodhii-logo.png"
       fluid
     />
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">About</Nav.Link>
-        <Nav.Link href="#link">Services</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/about/">About</Nav.Link>
+        <Nav.Link href="/services/">Services</Nav.Link>
+
         <Image
           style={{ maxWidth: "300px" }}
-          class={"d-none d-lg-block "}
+          class={"d-xs-none d-sm-none d-md-none"}
           src="/embodhii-logo.png"
           fluid
         />
-        <Nav.Link href="#link">Blog</Nav.Link>
-        <Nav.Link href="#link">FAQ</Nav.Link>
-        <Nav.Link href="#link">Contact</Nav.Link>
+        <Nav.Link href="/blog/">Blog</Nav.Link>
+        <Nav.Link href="/faq/">FAQ</Nav.Link>
+        <Nav.Link href="/contact/">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
